@@ -1,0 +1,18 @@
+def count_vowels(string):
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    count = 0
+    
+    # Convert the string to lowercase for case-insensitive comparison
+    string = string.lower()
+    
+    for char in string:
+        if char in vowels:
+            count += 1
+    
+    return count
+
+
+# Example usage
+string = "I want to become a data scientist"
+vowel_count = count_vowels(string)
+print("Number of vowels:", vowel_count)
